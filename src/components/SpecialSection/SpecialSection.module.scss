@@ -1,0 +1,65 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/colors' as color;
+
+.container {
+  @include flex;
+  @include size(35.4rem);
+  background-image: url(@/assets/specialinfo-bg.jpg);
+  background-size: cover;
+}
+
+.wrapper {
+  @include flex;
+  gap: 5rem;
+
+  img {
+    @include size(32.3rem, _);
+  }
+
+  button {
+    background-color: color.$dourado;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-transform: none;
+
+    &:hover {
+      background-color: color.$dourado-hover;
+    }
+  }
+}
+
+.callToActionTextAndButton {
+  @include flex(flex-start);
+  flex-direction: column;
+  gap: 1.5rem;
+
+  h1 {
+    color: color.$dourado;
+    font: {
+      family: Cormorant, Lato, Arial, sans-serif;
+      size: 53px;
+      weight: 400;
+    } 
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: color.$dourado;
+    font: {
+      family: Cormorant, Lato, Arial, sans-serif;
+      size: 30px;
+      style: italic;
+      weight: 400;
+    }
+  }
+
+  p, strong {
+    color: white;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: left;
+  }
+  
+  p {
+    font-weight: 300;
+  }
+}

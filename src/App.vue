@@ -4,6 +4,8 @@
   <about-section></about-section>
   <highlighted-comment></highlighted-comment>
   <icons-section></icons-section>
+  <special-section></special-section>
+  <the-hero></the-hero>
 </template>
 
 <script>
@@ -12,6 +14,7 @@ import TheHero from './components/TheHero/TheHero.vue';
 import AboutSection from './components/AboutSection/AboutSection.vue';
 import HighlightedComment from './components/HighlightedComment/HighlightedComment.vue';
 import IconsSection from './components/IconsSection/IconsSection.vue';
+import SpecialSection from './components/SpecialSection/SpecialSection.vue';
 
 export default {
   name: 'App',
@@ -21,6 +24,7 @@ export default {
     AboutSection,
     HighlightedComment,
     IconsSection,
+    SpecialSection,
   },
 };
 </script>
