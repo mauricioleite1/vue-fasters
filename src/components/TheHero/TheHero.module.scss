@@ -1,10 +1,65 @@
 @use '@/styles/mixins' as *;
+@use '@/styles/colors' as color;
 
 .container {
-  @include flex;
+  @include flex(flex-start);
   @include size(39.35rem);
   background: #080909;
   background-image: url('@/assets/hero-banner.jpg');
   background-size: cover;
+  flex-direction: column;
   margin: auto;
+  padding-top: 7.8rem;
+  padding-left: 6rem;
+
+  gap: 4rem;
+
+}
+
+.callToActionTextAndButton {
+  @include flex(flex-start);
+  flex-direction: column;
+  gap: 2rem;
+  
+  p, strong {
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 2rem;
+    font-size: 24px;
+  }
+
+  button {
+    &:hover {
+      background: transparent;
+      border: 1px solid #be9667 !important;
+    }
+  }
+}
+
+.goldenText {
+  font: {
+    family: Playfair Display, Lato, Arial, sans-serif;
+    weight: 400;
+    size: 32.5px;
+    style: italic;
+  }
+  text-align: left;
+
+  line-height: 43px;
+  color: color.$dourado;
+
+  &:last-child {
+    text-align: right;
+  }
+}
+
+.blueText {
+  font: {
+    family: Playfair Display, Lato, Arial, sans-serif;
+    weight: 400;
+    size: 90px;
+  }
+  line-height: 80px;
+  color: color.$azul-1;
 }
