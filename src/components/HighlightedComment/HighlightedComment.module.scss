@@ -1,0 +1,17 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/colors' as color;
+
+.container {
+  @include flex;
+  @include size(22.3rem);
+  background: color.$highlighted-comment-bg;
+  // background-image: url('@/assets/corte-bg.png');
+  background-size: cover;
+
+  img {
+    @include size(_, 217px);
+    transform: rotate(7.42deg);
+    border: 7px solid white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  }
+}
