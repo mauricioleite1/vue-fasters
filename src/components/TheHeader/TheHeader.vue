@@ -1,12 +1,11 @@
 <template>
   <header>
-    <div>
+    <div class="logo">
       <h2>Logo</h2>
     </div>
 
     <nav>
-      <a href="">EMPRESA</a>
-      <a href="">CAMISARIA</a>
+      <a v-for="{ id, name, link } in navMenuOptions" :key="id" :href="link"><h4>{{ name }}</h4></a>
     </nav>
   </header>
 </template>
@@ -16,19 +15,12 @@ export default {
   name: 'TheHeader',
   data() {
     return {
-      socialLinks: [
-        {
-          name: 'logo-instagram',
-          link: 'https://www.instagram.com/mauricioleite1',
-        },
-        {
-          name: 'logo-linkedin',
-          link: 'https://www.linkedin.com/in/mauricioleite',
-        },
-        {
-          name: 'logo-github',
-          link: 'https://www.github.com/mauricioleite1',
-        },
+      navMenuOptions: [
+        { id: 1, name: 'EMPRESA', link: '#empresa' },
+        { id: 2, name: 'CAMISARIA', link: '#camisaria' },
+        { id: 3, name: 'ALFAIATARIA', link: '#alfaiataria' },
+        { id: 4, name: 'DEPOIMENTOS', link: '#depoimentos' },
+        { id: 5, name: 'CONTATO', link: '#contato' },
       ],
     };
   },
