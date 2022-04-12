@@ -21,7 +21,7 @@
 import styles from './SpecialSection.module.scss';
 
 export default {
-  name: 'IconsSection',
+  name: 'SpecialSection',
   data() {
     return {
       styles,

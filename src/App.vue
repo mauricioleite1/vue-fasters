@@ -5,6 +5,7 @@
   <highlighted-comment></highlighted-comment>
   <icons-section></icons-section>
   <special-section></special-section>
+  <services-section></services-section>
   <the-hero></the-hero>
 </template>
 
@@ -15,6 +16,7 @@ import AboutSection from './components/AboutSection/AboutSection.vue';
 import HighlightedComment from './components/HighlightedComment/HighlightedComment.vue';
 import IconsSection from './components/IconsSection/IconsSection.vue';
 import SpecialSection from './components/SpecialSection/SpecialSection.vue';
+import ServicesSection from './components/ServicesSection/ServicesSection.vue';
 
 export default {
   name: 'App',
@@ -25,6 +27,7 @@ export default {
     HighlightedComment,
     IconsSection,
     SpecialSection,
+    ServicesSection,
   },
 };
 </script>

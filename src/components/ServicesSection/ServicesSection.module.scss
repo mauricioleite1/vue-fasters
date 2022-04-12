@@ -1,0 +1,98 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/colors' as color;
+
+.container {
+  @include flex;
+  @include size(42.5rem);
+  background: white;
+}
+
+.top {
+  @include flex;
+  @include size;
+  // background: rgb(161, 161, 161);
+}
+
+.image {
+  position: relative;
+  margin-left: 7rem;
+
+  img {
+    @include size(30.5rem, _);
+  }
+
+  div {
+    top: 8.5px;
+    right: -10px;
+    @include size(29.3rem, 34.4rem);
+    border: 1px solid #1C86A4;
+    position: absolute;
+  }
+}
+
+.imageInfo {
+  @include flex(flex-start);
+  @include size(24.5rem, 36rem);
+  flex-direction: column;
+  border: 1px solid #E5E5E5;
+  border-left: none;
+  padding-left: 4rem;
+
+  button {
+    text-transform: none;
+  }
+
+  h1 {    
+    font: {
+      family: Cormorant, Lato, Arial, sans-serif;
+      weight: 300;
+      size: 62px;
+      line-height: 1.2;
+    };
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  h5 {
+    color: #c4c4c4;
+    margin-top: -12px;
+    font: {
+      family: Lato, Arial, sans-serif;
+      weight: 300;
+      size: 16px;
+      line-height: 19.2px;
+    };
+    text-align: left;
+    text-transform: uppercase;
+  }
+}
+
+.title {
+  @include flex(flex-start);
+  flex-direction: column;
+}
+
+.camisaria {
+  @include size(auto, 80%);
+}
+
+.lists {
+  @include flexspaced;
+  @include size(10rem, 100%);
+  margin: auto;
+  margin-left: 2rem;
+
+  li {
+    padding: 0.2rem;
+    text-align: left;
+    color: color.$cinza-2;
+
+    font: {
+      family: Cormorant, Lato, Arial, sans-serif;
+      size: 24px;
+      style: italic;
+      weight: 300;
+    }
+  }
+}
+
