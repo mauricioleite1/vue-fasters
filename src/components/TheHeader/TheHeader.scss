@@ -1,0 +1,12 @@
+@use '../../styles/mixins' as *;
+
+header {
+  @include flexspaced;
+  @include size(7rem);
+  background-image: linear-gradient(to bottom, black 30%, transparent);
+  padding-inline: 2rem;
+
+  h2 {
+    color: white;
+  }
+}

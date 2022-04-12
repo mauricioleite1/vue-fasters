@@ -3,12 +3,12 @@
 </template>
 
 <script>
-// import TheHeader from './components/TheHeader/TheHeader.vue';
+import TheHeader from './components/TheHeader/TheHeader.vue';
 
 export default {
   name: 'App',
   components: {
-    // TheHeader,
+    TheHeader,
   },
 };
 </script>
