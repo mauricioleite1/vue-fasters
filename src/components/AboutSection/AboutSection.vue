@@ -6,7 +6,11 @@
         <h1>Renee Trajar<hr></h1>
         <p>{{ text.aboutFirstPart }}</p>
         <p>{{ text.aboutSecondPart }}</p>
-        <p>{{ text.aboutCitation }}</p>
+        <p>
+          {{ text.aboutCitation }}
+          <span :class="[styles.signatureText]">Renee Trajar</span>
+        </p>
+        <button @click="handleClick">{{ callToActionButtonTitle }}</button>
       </div>
     </div>
   </section>
@@ -22,6 +26,7 @@ export default {
     return {
       styles,
       text,
+      callToActionButtonTitle: 'Agende uma visita!',
     };
   },
 };

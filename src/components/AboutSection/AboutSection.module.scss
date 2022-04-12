@@ -7,14 +7,14 @@
   background: white;
 
   img {
-    @include size(27.6rem, _);
+    @include size(27.8rem, _);
   }
 }
 
 .wrapper {
   @include flex(center, flex-start);
-  @include size(auto, 70%);
-  gap: 10rem;
+  @include size(auto, 64.8%);
+  gap: 7rem;
 
   p {
     width: 90%;
@@ -22,13 +22,25 @@
     font-size: 19px;
     font-weight: 300;
     text-align: left;
-
-    &:last-child {
+    
+    &:nth-child(4) {
       color: color.$azul-2;
-      font-family: Cormorant, Lato, Arial, serif;
-      font-style: italic;
-      font-weight: 400;
-      font-size: 24px;
+      font: {
+        family: Cormorant, Lato, Arial, serif;
+        size: 24px;
+        style: italic;
+        weight: 400;
+      }
+      
+      .signatureText {
+        font-style: normal;
+        position: absolute;
+        color: color.$cinza-3;
+        bottom: 4rem;
+        font-weight: 500;
+        font-size: 20px;
+        right: 0;
+      }
     }
   }
 }
@@ -36,15 +48,15 @@
 .info {
   @include flex(center, flex-start);
   flex-flow: row wrap;
-  gap: 3.5rem;
+  gap: 2.7rem;
   position: relative;
 
   hr {
     position: absolute;
     left: 4rem;
     top: 3.5rem;
-    width: 3.3rem;
-    opacity: 0.5;;
+    width: 3.2rem;
+    opacity: 0.3;
     border-color: color.$border-azul;
   }
 }
