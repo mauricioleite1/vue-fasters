@@ -13,11 +13,11 @@
 
 .wrapper {
   @include flex(center, flex-start);
-  @include size(auto, 64.8%);
+  @include size(auto);
+  padding-inline: 5.18rem;
   gap: 7rem;
 
   p {
-    width: 90%;
     color: #333;
     font-size: 19px;
     font-weight: 300;
@@ -33,6 +33,7 @@
       }
       
       .signatureText {
+        font-family: Cormorant, Lato, Arial, serif;
         font-style: normal;
         position: absolute;
         color: color.$cinza-3;

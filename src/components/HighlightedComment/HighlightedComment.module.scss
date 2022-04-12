@@ -8,10 +8,56 @@
   // background-image: url('@/assets/corte-bg.png');
   background-size: cover;
 
-  img {
+  .photo {
     @include size(_, 217px);
     transform: rotate(7.42deg);
     border: 7px solid white;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    position: relative;
+  }
+
+  .bgPhoto {
+    @include size(360px, _);
+    z-index: 0;
+    position: absolute;
+    right: 0;
+  }
+
+  p {
+    @include size(auto, 65%);
+    font: {
+      family: Cormorant, Lato, Arial, serif;
+      size: 24px;
+      weight: 300;
+    }
+  }
+}
+
+.wrapper {
+  @include flex(center, flex-start);
+  @include size(auto, 74%);
+}
+
+.text {
+  @include flex;
+  gap: 5rem;
+  flex-direction: column;
+
+  h3 {
+    font-family: Cormorant, Lato, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    font-style: italic;
+    color: color.$azul-1;
+  }
+
+  h4 {
+    color: color.$dourado;
+    font: {
+      family: Lato, Arial, sans-serif;
+      size: 20px;
+      weight: 300;
+    }
   }
 }

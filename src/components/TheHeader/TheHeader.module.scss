@@ -1,11 +1,11 @@
 @use '@/styles/mixins' as *;
 
 header {
-  @include flexspaced;
+  @include flex;
   @include size(6.7rem);
-  background-image: linear-gradient(to bottom, black 30%, transparent);
-  padding-inline: 5rem;
+  // padding-inline: 5rem;
   position: fixed;
+  margin: auto;
   z-index: 1;
 
   h2 {
@@ -27,6 +27,13 @@ header {
       }
     }
   }
+}
+
+.wrapper {
+  @include flexspaced;
+  @include size(100%);
+  padding-inline: 18rem;
+  background-image: linear-gradient(to bottom, black 30%, transparent);
 }
 
 .logo {
