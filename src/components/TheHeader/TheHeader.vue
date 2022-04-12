@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="logo">
+    <div :class="[styles.logo]">
       <h2>Logo</h2>
     </div>
 
@@ -11,10 +11,13 @@
 </template>
 
 <script>
+import styles from './TheHeader.module.scss';
+
 export default {
   name: 'TheHeader',
   data() {
     return {
+      styles,
       navMenuOptions: [
         { id: 1, name: 'EMPRESA', link: '#empresa' },
         { id: 2, name: 'CAMISARIA', link: '#camisaria' },
@@ -26,7 +29,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-@import "./TheHeader.scss";
-</style>

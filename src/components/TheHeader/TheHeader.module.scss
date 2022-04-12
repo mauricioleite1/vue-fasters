@@ -5,14 +5,10 @@ header {
   @include size(6.7rem);
   background-image: linear-gradient(to bottom, black 30%, transparent);
   padding-inline: 20rem;
+  position: fixed;
 
   h2 {
     color: white;
-  }
-
-  .logo {
-    @include flex(center, flex-start);
-    flex: 1;
   }
 
   nav {
@@ -30,4 +26,9 @@ header {
       }
     }
   }
+}
+
+.logo {
+  @include flex(center, flex-start);
+  flex: 1;
 }
