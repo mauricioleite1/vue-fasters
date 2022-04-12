@@ -3,7 +3,6 @@
 header {
   @include flex;
   @include size(6.7rem);
-  // padding-inline: 5rem;
   position: fixed;
   margin: auto;
   z-index: 1;
@@ -32,7 +31,7 @@ header {
 .wrapper {
   @include flexspaced;
   @include size(100%);
-  padding-inline: 18rem;
+  padding-inline: 2rem;
   background-image: linear-gradient(to bottom, black 30%, transparent);
 }
 

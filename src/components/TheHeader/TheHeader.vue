@@ -2,7 +2,8 @@
   <header>
     <div :class="[styles.wrapper]">
       <div :class="[styles.logo]">
-        <h2>Logo</h2>
+        <!-- <Logo /> -->
+        <img src="@/assets/logo.svg" alt="" />
       </div>
 
       <nav>
@@ -20,6 +21,7 @@
 </template>
 
 <script>
+// import Logo from '@/assets/logo.svg';
 import styles from './TheHeader.module.scss';
 
 export default {
@@ -36,5 +38,6 @@ export default {
       ],
     };
   },
+  // components: { Logo },
 };
 </script>
