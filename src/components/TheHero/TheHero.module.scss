@@ -1,0 +1,9 @@
+@use '@/styles/mixins' as *;
+
+.container {
+  @include flex;
+  @include size(39.35rem);
+  background: #080909;
+  background-image: url('@/assets/hero-banner.jpg');
+  background-size: cover;
+}

@@ -1,10 +1,10 @@
-@use '../../styles/mixins' as *;
+@use '@/styles/mixins' as *;
 
 header {
   @include flexspaced;
   @include size(6.7rem);
   background-image: linear-gradient(to bottom, black 30%, transparent);
-  padding-inline: 20rem;
+  padding-inline: 5rem;
   position: fixed;
 
   h2 {
@@ -18,8 +18,8 @@ header {
     h4 {
       @include transition(0.4s);
       color: grey;
-      font-size: 0.97rem;
-      font-weight: 200;
+      font-size: 1rem;
+      font-weight: 300;
 
       &:hover {
         color: #1c86a4;

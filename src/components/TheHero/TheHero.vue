@@ -1,5 +1,5 @@
 <template>
-  <div :class="[styles.container]">Hero</div>
+  <div :class="[styles.container]"></div>
 </template>
 
 <script>
