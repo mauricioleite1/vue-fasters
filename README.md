@@ -3,13 +3,13 @@
 
 
 
-Página fictícia do profissional Renee Trajar. Um renomado alfaiate com mais de 35 anos de experiência. A página consta com informações sobre o profissional, os tipos de serviços, depoimentos de clientes satisfeitos, área para entrar em contato, etc.
+Página fictícia do profissional Renee Trajar. Um renomado alfaiate com mais de 35 anos de experiência. <br> A página consta com informações sobre o profissional, os tipos de serviços, depoimentos de clientes satisfeitos, área para entrar em contato, etc.
 
 <br>
 
 ## Objetivo
 
-🚀 Esta página é uma apresentação para o teste técnico proposto pela [Fasters](https://www.fasters.com.br),<br>Inteiramente baseado no protótipo fornecido: [Figma](https://www.figma.com/proto/CF2Fe5EiRaWwbThBlEZAMI/Site---Renee-Trajar-NOVO?node-id=104%3A61&viewport=-103%2C-5038%2C1.2973029613494873&scaling=min-zoom&page-id=0%3A1)<br> com o propósito de cumprir os requisitos do processo seletivo para vaga __Desenvolvedor Frontend Jr__
+🚀 Esta página é uma apresentação para o teste técnico proposto pela [Fasters](https://www.fasters.com.br),<br>Inteiramente baseado no protótipo fornecido: [Figma](https://www.figma.com/proto/CF2Fe5EiRaWwbThBlEZAMI/Site---Renee-Trajar-NOVO?node-id=104%3A61&viewport=-103%2C-5038%2C1.2973029613494873&scaling=min-zoom&page-id=0%3A1) com o propósito de cumprir os requisitos do processo seletivo para vaga __Desenvolvedor Frontend Jr__
 
 <br>
 
