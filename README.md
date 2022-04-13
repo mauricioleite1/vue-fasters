@@ -7,11 +7,13 @@ Página fictícia do profissional Renee Trajar. Um renomado alfaiate com mais de
 
 <br>
 
+## Objetivo
+
 🚀 Esta página é uma apresentação para o teste técnico proposto pela [Fasters](https://www.fasters.com.br),<br>Inteiramente baseado no protótipo fornecido: [Figma](https://www.figma.com/proto/CF2Fe5EiRaWwbThBlEZAMI/Site---Renee-Trajar-NOVO?node-id=104%3A61&viewport=-103%2C-5038%2C1.2973029613494873&scaling=min-zoom&page-id=0%3A1)<br> com o propósito de cumprir os requisitos do processo seletivo para vaga __Desenvolvedor Frontend Jr__
 
 <br>
 
-## Como?
+## Prazo
 🖥️ A página foi feita em 1 dia, <br>
 Onde deveria seguir o protótipo e dar a vida com o código, foram utilizadas as seguintes ferramentas:
 
@@ -22,8 +24,18 @@ Onde deveria seguir o protótipo e dar a vida com o código, foram utilizadas as
 <br>
 
 ## Como iniciar o app
-Para iniciar a aplicação frontend,
-Deve-se utilizar o comando:
+Primeiramente, clone a aplicação para sua máquina 
+```bash
+git clone https://github.com/mauricioleite1/vue-fasters.git
+```
+
+Após isso, instale as dependências da aplicação com o comando abaixo: (se certifique de entrar na pasta correta),
+```bash
+yarn
+```
+
+Então para iniciar a aplicação,
+deve-se utilizar o comando:
 ```bash
 yarn serve
 ```
