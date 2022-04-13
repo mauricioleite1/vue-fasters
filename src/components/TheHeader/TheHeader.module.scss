@@ -1,40 +1,5 @@
 @use '@/styles/mixins' as *;
 
-header {
-  @include flex;
-  @include size(6.7rem);
-  position: fixed;
-  margin: auto;
-  z-index: 99;
-
-  h2 {
-    color: white;
-  }
-
-  nav {
-    @include flexspaced;
-    flex: 0.8;
-
-    h4 {
-      @include transition(0.4s);
-      color: grey;
-      font-size: 1rem;
-      font-weight: 300;
-
-      &:hover {
-        color: #1c86a4;
-      }
-    }
-  }
-}
-
-.wrapper {
-  @include flex;
-  @include size(100%);
-  padding-inline: 2rem;
-  background-image: linear-gradient(to bottom, black 30%, transparent);
-}
-
 .logo {
   @include flex(center, flex-start);
   flex: 1;

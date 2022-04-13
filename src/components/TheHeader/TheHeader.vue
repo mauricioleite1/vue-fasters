@@ -1,9 +1,10 @@
 <template>
-  <header>
-    <div :class="[styles.wrapper]">
+  <header :class="{ 'new-header': !showHeader }">
+    <div :class="showHeader ? 'header-wrapper' : 'header-white-wrapper'">
       <div :class="[styles.logo]">
         <!-- <Logo /> -->
-        <img src="@/assets/logo.svg" alt="" />
+        <img src="@/assets/logo.svg" alt="" v-if="showHeader" />
+        <img src="@/assets/min-logo.svg" alt="" v-else />
       </div>
 
       <nav>
@@ -29,6 +30,7 @@ export default {
   data() {
     return {
       styles,
+      showHeader: true,
       navMenuOptions: [
         { id: 1, name: 'EMPRESA', link: '#empresa' },
         { id: 2, name: 'CAMISARIA', link: '#camisaria' },
@@ -38,6 +40,20 @@ export default {
       ],
     };
   },
-  // components: { Logo },
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  unmounted() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      if (window.pageYOffset < 100) {
+        this.showHeader = true;
+      } else {
+        this.showHeader = false;
+      }
+    },
+  },
 };
 </script>

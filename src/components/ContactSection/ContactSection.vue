@@ -1,5 +1,5 @@
 <template>
-  <div :class="[styles.container]">
+  <div id="contato" :class="[styles.container]">
     <div :class="[styles.titulo]">
       <h1>{{ contacts.title }}</h1><hr />
     </div>

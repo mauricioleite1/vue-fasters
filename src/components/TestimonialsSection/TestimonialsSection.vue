@@ -1,5 +1,5 @@
 <template>
-  <div :class="[styles.container]">
+  <div id="depoimentos" :class="[styles.container]">
     <div :class="[styles.titulo]">
       <h1>Depoimentos</h1>
       <hr />

@@ -36,6 +36,55 @@ p {
   font-weight: 300;
 }
 
+header {
+  @include flex;
+  @include size(6.7rem);
+  @include transition(0.4s);
+  position: fixed;
+  margin: auto;
+  z-index: 99;
+
+  h2 {
+    color: white;
+  }
+
+  nav {
+    @include flexspaced;
+    flex: 0.8;
+
+    h4 {
+      @include transition(0.4s);
+      color: grey;
+      font-size: 1rem;
+      font-weight: 300;
+
+      &:hover {
+        color: #1c86a4;
+      }
+    }
+  }
+}
+
+.new-header {
+  @include size(3.95rem);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 18px;
+}
+
+.header-wrapper {
+  @include flex;
+  @include size(100%);
+  padding-inline: 2rem;
+  background-image: linear-gradient(to bottom, black 30%, transparent);
+}
+
+.header-white-wrapper {
+  @include flex;
+  @include size(100%);
+  padding-inline: 2rem;
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255) 30%, transparent);
+  background: white;
+}
+
 button {
   @include size(50px, 300px);
   @include transition;

@@ -34,7 +34,7 @@
     <div :class="[styles.bottom]">
 
       <div :class="[styles.imageInfo]">
-        <div id="camisaria" :class="[styles.camisaria]">
+        <div id="alfaiataria" :class="[styles.camisaria]">
           <div :class="[styles.title]">
             <h1>Alfaiataria</h1>
             <h5>- Totalmente feito à mão sob medida</h5>
