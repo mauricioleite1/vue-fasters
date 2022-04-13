@@ -2,19 +2,19 @@
   <div :class="[styles.container]">
     <div :class="[styles.wrapper]">
       <div>
-        <img src="@/assets/icons-1.svg" alt="" />
+        <img src="@/assets/icons-1.svg" alt="Ícone de máquina de costura" />
         <h2>Qualidade</h2>
         <p>Camisaria e Alfaiataria 100% artesanal.</p>
       </div>
       <hr>
       <div>
-        <img src="@/assets/icons-2.svg" alt="" />
+        <img src="@/assets/icons-2.svg" alt="Ícone de medalha" />
         <h2>Confiança</h2>
         <p>Atendimento personalizado no escritório ou residência.</p>
       </div>
       <hr>
       <div>
-        <img src="@/assets/icons-3.svg" alt="" />
+        <img src="@/assets/icons-3.svg" alt="Ícone de badge de agulha de costura" />
         <h2>Experiência</h2>
         <p>Tradição e modernidade proporcionando elegância.</p>
       </div>
@@ -28,9 +28,7 @@ import styles from './IconsSection.module.scss';
 export default {
   name: 'IconsSection',
   data() {
-    return {
-      styles,
-    };
+    return { styles };
   },
 };
 </script>
