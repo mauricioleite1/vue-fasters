@@ -18,6 +18,7 @@ Página fictícia do profissional Renee Trajar. Um renomado alfaiate com mais de
 Onde deveria seguir o protótipo e dar a vida com o código, foram utilizadas as seguintes ferramentas:
 
 - [Vue 3](https://vuejs.org)
+- [Vue CLI](https://cli.vuejs.org)
 - [SASS](https://sass-lang.com)
 - [ESLint](https://eslint.org)
 - [Yarn](https;//yarnpkg.com)
