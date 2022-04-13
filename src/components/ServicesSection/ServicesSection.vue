@@ -56,7 +56,7 @@
           <button>Quero um orçamento</button>
       </div>
       <div :class="[styles.image]">
-        <div :class="[styles.imgBorder]" />
+        <div :class="[styles.imgBorderAlfaiataria]" />
         <div :class="[styles.imgAlfaiataria]" />
         <div :class="[styles.imgAlfaiatariaBack]" />
         <!-- <img src="@/assets/services-2.jpg" alt="" /> -->

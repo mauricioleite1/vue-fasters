@@ -12,6 +12,12 @@
   cursor: pointer;
   position: fixed;
   right: 4rem;
+  z-index: 98;
+
+  @media screen and (max-width: 768px) {
+    bottom: 3rem;
+    right: 3rem;
+  }
   
   &:hover {
     opacity: 0.8;

@@ -6,20 +6,38 @@
   @include size(35.4rem);
   background-image: url(@/assets/specialinfo-bg.jpg);
   background-size: cover;
+
+  @media screen and (max-width: 768px) {
+    @include size(48rem);
+  }
 }
 
 .wrapper {
   @include flex;
   gap: 5rem;
 
+  @media screen and (max-width: 768px) {
+    @include size(_, 90%);
+  }
+
   img {
     @include size(32.3rem, _);
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   button {
     background-color: color.$dourado;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     text-transform: none;
+
+    @media screen and (max-width: 768px) {
+      @include size(_);
+      margin: auto;
+      margin-top: 3rem;
+    }
 
     &:hover {
       background-color: color.$dourado-hover;
@@ -31,6 +49,10 @@
   @include flex(flex-start);
   flex-direction: column;
   gap: 1.5rem;
+
+  @media screen and (max-width: 768px) {
+    gap: 2rem;
+  }
 
   h1 {
     color: color.$dourado;

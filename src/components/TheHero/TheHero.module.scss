@@ -1,6 +1,9 @@
 @use '@/styles/mixins' as *;
 @use '@/styles/colors' as color;
 
+$small: 768px;
+// $medium: 900px
+
 .container {
   @include flex(flex-start);
   @include size(39.35rem);
@@ -11,9 +14,26 @@
   margin: auto;
   padding-top: 7.8rem;
   padding-left: 6rem;
-
   gap: 4rem;
 
+  @media screen and (max-width: 768px) {
+    @include flex;
+    @include size(100vh);
+    background-position-x: 60rem;
+    padding-left: 0;
+    padding-top: 0;
+    gap: 12rem;
+  }
+
+  @media screen and (min-width: 769px) {
+    padding-left: 10rem;
+  }
+}
+
+.text {
+  @media screen and (max-width: 768px) {
+    // margin-top: -8rem;
+  }
 }
 
 .callToActionTextAndButton {
@@ -30,6 +50,10 @@
   }
 
   button {
+  @media screen and (max-width: 768px) {
+    @include size(_);
+    margin-top: 20px;
+  }
     &:hover {
       background: transparent;
       border: 1px solid #be9667 !important;

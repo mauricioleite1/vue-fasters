@@ -3,7 +3,12 @@
 
 .container {
   @include flex;
-  @include size(12.6rem);
+  @include size(12.6rem, 90%);
+  margin: auto;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .wrapper {

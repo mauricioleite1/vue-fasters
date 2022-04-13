@@ -7,12 +7,22 @@
   background: white;
   border-top: 2px solid color.$dourado;
   position: relative;
+
+  @media screen and (max-width: 768px) {
+    @include size(14rem, 90%);
+    margin: auto;
+  }
 }
 
 .wrapper {
   @include flex;
   @include flexspaced;
   @include size;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 .leftContent {
@@ -38,6 +48,11 @@
 
   h3 {
     color: #4F4F4F;
+
+    @media screen and (max-width: 768px) {
+      @include size(_, 60%);
+    }
+
     font: {
       family: Poppins, Lato, sans-serif;
       size: 14px;

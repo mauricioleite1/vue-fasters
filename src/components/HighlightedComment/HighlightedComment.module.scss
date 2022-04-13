@@ -5,8 +5,15 @@
   @include flex;
   @include size(22.3rem);
   background: color.$highlighted-comment-bg;
-  // background-image: url('@/assets/corte-bg.png');
   background-size: cover;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    @include flex;
+    @include size;
+    margin-top: 20px;
+    background: color.$azul-4;
+  }
 
   .photo {
     @include size(_, 217px);
@@ -15,6 +22,12 @@
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
     z-index: 1;
     position: relative;
+
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      top: 30px;
+      left: 40px;
+    }
   }
 
   .bgPhoto {
@@ -22,6 +35,11 @@
     z-index: 0;
     position: absolute;
     right: 0;
+
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      top: 2px;
+    }
   }
 
   p {
@@ -37,12 +55,24 @@
 .wrapper {
   @include flex(center, flex-start);
   @include size(auto, 74%);
+
+  @media screen and (max-width: 768px) {
+    @include size;
+  }
 }
 
 .text {
   @include flex;
   gap: 5rem;
   flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    @include flex(center, center);
+    @include size;
+    background: color.$highlighted-comment-bg;
+    margin-top: 23rem;
+    padding-block: 3.5em;
+  }
 
   h3 {
     color: color.$azul-1;

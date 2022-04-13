@@ -52,6 +52,10 @@ header {
     @include flexspaced;
     flex: 0.8;
 
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
     h4 {
       @include transition(0.4s);
       color: grey;
@@ -132,6 +136,10 @@ button {
   color: black;
   position: absolute;
   right: 4.5rem;
+
+  @media screen and (max-width: 768px) {
+    right: 2rem;
+  }
 
   &:hover {
     background: white;

@@ -1,5 +1,5 @@
 <template>
-  <section :class="[styles.container]">
+  <section id="empresa" :class="[styles.container]">
     <div :class="[styles.wrapper]">
       <img src="@/assets/renee-photo.jpg" alt="Renee Trajar frontal photo" />
       <div :class="[styles.info]">
