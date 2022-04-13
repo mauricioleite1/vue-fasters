@@ -52,3 +52,21 @@ button {
     background: color.$azul-1-hover;
   }
 }
+
+.contact-btn {
+  @include size(50px, 270px);
+  @include transition;
+  background: transparent;
+  border: 1px solid color.$azul-2;
+  border-radius: 2px;
+  color: color.$azul-2;
+  font-family: Lato, serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: none;
+
+  &:hover {
+    background: transparent;
+    border: 1px solid color.$dourado;
+  }
+}

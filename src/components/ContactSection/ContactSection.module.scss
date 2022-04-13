@@ -1,0 +1,112 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/colors' as color;
+
+.container {
+  @include flex;
+  @include size(31.5rem);
+  background: white;
+  flex-direction: column;
+  gap: 3rem;
+
+  h1 {
+    color: color.$azul-2;
+  }
+  
+  h2 {
+    color: color.$azul-2;    
+    text-align: left;
+    text-transform: uppercase;
+    font: {
+      family: Lato, Arial, sans-serif;
+      size: 18px;
+      weight: 300;
+    }
+  }
+
+  h4 {
+    color: color.$cinza-3;   
+    text-align: left;
+    text-transform: none;
+
+    font: {
+      family: Lato, Arial, sans-serif;
+      size: 16px;
+      weight: 300;
+    }
+  }
+}
+
+.titulo {
+  margin-top: -3rem;
+  hr {
+    @include transition(0.4s);
+    border-color: color.$border-azul;
+    opacity: 0.6;
+    width: 3.2rem;
+    margin-left: 2.5rem;
+    margin-top: 0.8rem;
+  
+    &:hover {
+      // left: -100px;
+      width: 25rem;
+    }
+  }
+}
+
+.content {
+  @include flex;
+  gap: 4rem;
+}
+
+.leftContent {
+  @include flex(flex-start);
+  gap: 4rem;
+  flex-direction: column;
+}
+
+.leftWrapper {
+  @include flex;
+  // background: #000;
+}
+
+.contacts, .callToActionButton {
+  @include flex(flex-start);
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.rightWrapper {
+  @include flex;
+
+  form {
+    @include flex(flex-start);
+    flex-direction: column;
+    gap: 1.25rem;
+    margin: auto;
+
+    input {
+      @include size(42px);
+      border: 1px solid color.$azul-2;
+      border-radius: 3px;
+      min-width: 600px;
+      outline: none;
+      padding-left: 1rem;
+      text-align: left;
+
+      &::placeholder {
+        color: #C4C4C4;
+        font: {
+          family: Lato, Arial, sans-serif;
+          size: 14px;
+          weight: 300;
+        }
+      }
+    }
+
+    button {
+      text-transform: none;
+      width: 600px;
+      margin-top: 20px;
+    }
+  }
+}

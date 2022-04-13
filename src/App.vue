@@ -7,6 +7,7 @@
   <special-section></special-section>
   <services-section></services-section>
   <testimonials-section></testimonials-section>
+  <contact-section></contact-section>
   <whatsapp-icon></whatsapp-icon>
   <the-hero></the-hero>
 </template>
@@ -21,6 +22,7 @@ import SpecialSection from './components/SpecialSection/SpecialSection.vue';
 import ServicesSection from './components/ServicesSection/ServicesSection.vue';
 import TestimonialsSection from './components/TestimonialsSection/TestimonialsSection.vue';
 import WhatsappIcon from './components/WhatsappIcon/WhatsappIcon.vue';
+import ContactSection from './components/ContactSection/ContactSection.vue';
 
 export default {
   name: 'App',
@@ -33,6 +35,7 @@ export default {
     SpecialSection,
     ServicesSection,
     TestimonialsSection,
+    ContactSection,
     WhatsappIcon,
   },
 };
