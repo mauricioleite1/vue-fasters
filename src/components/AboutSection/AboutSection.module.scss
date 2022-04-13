@@ -53,11 +53,17 @@
   position: relative;
 
   hr {
+    @include transition(0.4s);
     position: absolute;
     left: 4rem;
     top: 3.5rem;
     width: 3.2rem;
     opacity: 0.3;
     border-color: color.$border-azul;
+  
+    &:hover {
+      left: -100px;
+      width: 25rem;
+    }
   }
 }

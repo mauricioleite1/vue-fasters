@@ -6,6 +6,7 @@
   <icons-section></icons-section>
   <special-section></special-section>
   <services-section></services-section>
+  <testimonials-section></testimonials-section>
   <the-hero></the-hero>
 </template>
 
@@ -17,6 +18,7 @@ import HighlightedComment from './components/HighlightedComment/HighlightedComme
 import IconsSection from './components/IconsSection/IconsSection.vue';
 import SpecialSection from './components/SpecialSection/SpecialSection.vue';
 import ServicesSection from './components/ServicesSection/ServicesSection.vue';
+import TestimonialsSection from './components/TestimonialsSection/TestimonialsSection.vue';
 
 export default {
   name: 'App',
@@ -28,6 +30,7 @@ export default {
     IconsSection,
     SpecialSection,
     ServicesSection,
+    TestimonialsSection,
   },
 };
 </script>
