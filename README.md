@@ -19,6 +19,7 @@ Onde deveria seguir o protótipo e dar a vida com o código, foram utilizadas as
 
 - [Vue 3](https://vuejs.org)
 - [SASS](https://sass-lang.com)
+- [ESLint](https://eslint.org)
 - [Yarn](https;//yarnpkg.com)
 
 <br>
@@ -51,6 +52,8 @@ Todas as formas de feedback são bem-vindas, sejam para
 
 💛 Me influenciar e ensinar com novas técnicas e metodologias<br>
 🐛 Informar algum problema que tenha encontrado<br>
+⭐ Dar uma estrela no meu projeto 🤷‍♂️
+
 
 Obrigado!
 
