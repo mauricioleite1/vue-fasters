@@ -3,11 +3,11 @@
     <div :class="[styles.wrapper]">
       <div :class="[styles.leftContent]">
         <img src="@/assets/footer-logo.svg" alt="Renee Trajar Logo" />
-        <h4>CNPJ: 04.487.685/0001-01</h4>
+        <h4>{{ info.cnpj }}</h4>
       </div>
 
       <div :class="[styles.rightContent]">
-        <h3>Copyright 2021 © Renee Trajar - Todos os direitos reservados.</h3>
+        <h3>{{ info.copyright }}</h3>
       </div>
     </div>
 
@@ -23,7 +23,13 @@ import styles from './TheFooter.module.scss';
 export default {
   name: 'TheFooter',
   data() {
-    return { styles };
+    return {
+      styles,
+      info: {
+        cnpj: 'CNPJ: 04.487.685/0001-01',
+        copyright: 'Copyright 2021 © Renee Trajar - Todos os direitos reservados.',
+      },
+    };
   },
   methods: {
     scrollToTop() {
