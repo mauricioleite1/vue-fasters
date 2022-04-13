@@ -25,7 +25,11 @@ Onde deveria seguir o protótipo e dar a vida com o código, foram utilizadas as
 <br>
 
 ## Como iniciar o app
-Primeiramente, clone a aplicação para sua máquina 
+Visualize a página no seu browser, clique em https://fasters-teste-mauricio-leite.vercel.app
+<br>
+ou
+<br>
+Baixe a aplicação para sua máquina,fazendo clone do repositório
 ```bash
 git clone https://github.com/mauricioleite1/vue-fasters.git
 ```
