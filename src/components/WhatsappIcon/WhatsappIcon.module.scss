@@ -1,0 +1,25 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/colors' as color;
+
+.container {
+  @include flex;
+  @include size(3.75rem, 3.75rem);
+  @include transition;
+  border-radius: 50%;
+  background: color.$whatsapp;
+  bottom: 11rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+  cursor: pointer;
+  position: fixed;
+  right: 4rem;
+  z-index: 98;
+
+  @media screen and (max-width: 768px) {
+    bottom: 3rem;
+    right: 3rem;
+  }
+  
+  &:hover {
+    opacity: 0.8;
+  }
+}

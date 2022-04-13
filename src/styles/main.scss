@@ -1,0 +1,148 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/colors' as color;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@300&display=swap');
+
+* {
+  color: #101010;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  color: color.$azul-1;
+  font-family: Cormorant, Lato, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+p {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+header {
+  @include flex;
+  @include size(6.7rem);
+  @include transition(0.4s);
+  position: fixed;
+  margin: auto;
+  z-index: 99;
+
+  h2 {
+    color: white;
+  }
+
+  nav {
+    @include flexspaced;
+    flex: 0.8;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
+    h4 {
+      @include transition(0.4s);
+      color: grey;
+      font-size: 1rem;
+      font-weight: 300;
+
+      &:hover {
+        color: #1c86a4;
+      }
+    }
+  }
+}
+
+.new-header {
+  @include size(3.95rem);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 18px;
+}
+
+.header-wrapper {
+  @include flex;
+  @include size(100%);
+  padding-inline: 2rem;
+  background-image: linear-gradient(to bottom, black 30%, transparent);
+}
+
+.header-white-wrapper {
+  @include flex;
+  @include size(100%);
+  padding-inline: 2rem;
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255) 30%, transparent);
+  background: white;
+}
+
+button {
+  @include size(50px, 300px);
+  @include transition;
+  background: color.$azul-1;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-family: Lato, serif;
+  font-size: 18px;
+  font-weight: 200;
+  text-transform: uppercase;
+
+  &:hover {
+    background: color.$azul-1-hover;
+  }
+}
+
+.contact-btn {
+  @include size(50px, 270px);
+  @include transition;
+  background: transparent;
+  border: 1px solid color.$azul-2;
+  border-radius: 2px;
+  color: color.$azul-2;
+  font-family: Lato, serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: none;
+
+  &:hover {
+    background: transparent;
+    border: 1px solid color.$dourado;
+    color: color.$dourado;
+  }
+}
+
+.to-top-btn {
+  @include flex;
+  @include size(40px, 40px);
+  @include transition;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+  background: white;
+  cursor: pointer;
+  color: black;
+  position: absolute;
+  right: 4.5rem;
+
+  @media screen and (max-width: 768px) {
+    right: 2rem;
+  }
+
+  &:hover {
+    background: white;
+    opacity: 0.8;
+  }
+}

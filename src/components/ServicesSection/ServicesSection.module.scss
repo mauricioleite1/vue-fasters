@@ -1,0 +1,221 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/colors' as color;
+
+.container {
+  @include flex;
+  @include size(78rem);
+  background: white;
+  flex-direction: column;
+  gap: 6rem;
+
+  @media screen and (max-width: 768px) {
+    @include size;
+    gap: 18rem;
+  }
+}
+
+.top, .bottom {
+  @include flex;
+  @include size;
+
+  @media screen and (max-width: 768px) {
+    @include size(auto, 90%);
+    flex-flow: row wrap;
+  }
+}
+
+.image {
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    @include flex;
+    @include size(auto, 90%);
+    flex-flow: row wrap;
+    margin-top: 4rem;
+  }
+
+  .imgCamisaria {
+    @include size(30.5rem, 30.5rem);
+    @include transition(0.6s);
+    background-image: url('@/assets/services-1.jpg');
+    background-size: 112%;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (max-width: 768px) {
+      @include size(25rem);
+    }
+
+    &:hover {
+      background-position: -6px -6px;
+      opacity: 0.4;
+    }
+  }
+
+  .imgCamisariaBack {
+    @include size(30.5rem, 30.5rem);
+    @include transition(0.6s);
+    background: #001a24;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    @media screen and (max-width: 768px) {
+      @include size(25rem);
+    }
+  }
+
+  .imgAlfaiataria {
+    @include size(30.5rem, 30.5rem);
+    @include transition(0.6s);
+    background-image: url('@/assets/services-2.jpg');
+    background-size: 112%;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (max-width: 768px) {
+      @include size(25rem);
+      margin-top: -86rem;
+    }
+
+    &:hover {
+      background-position: -6px -6px;
+      opacity: 0.4;
+    }
+  }
+
+  .imgAlfaiatariaBack {
+    @include size(30.5rem, 30.5rem);
+    @include transition(0.6s);
+    background: #001a24;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    @media screen and (max-width: 768px) {
+      @include size(25rem);
+      margin-top: -55.5rem;
+    }
+  }
+
+  .imgBorder {
+    @include size(29.3rem, 31.7rem);
+    top: 8.5px;
+    right: -10px;
+    border: 1px solid #1C86A4;
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+
+    @media screen and (max-width: 768px) {
+      @include size(24rem, 25.7rem);
+      right: -9px;
+      top: 8px;
+    }
+  }
+
+  .imgBorderAlfaiataria {
+    @include size(29.3rem, 31.7rem);
+    top: 8.5px;
+    right: -10px;
+    border: 1px solid #1C86A4;
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+
+    @media screen and (max-width: 768px) {
+      @include size(24rem, 25.7rem);
+      right: -9px;
+      top: -55rem;
+    }
+  }
+}
+
+.imageInfo {
+  @include flex(flex-start);
+  @include size(24.5rem, 36rem);
+  flex-direction: column;
+  border: 1px solid #E5E5E5;
+  padding-left: 4rem;
+
+  @media screen and (max-width: 768px) {
+    flex-flow: column nowrap;
+    @include flex;
+    @include size;
+    border: none;
+    padding-left: 0;
+    margin-top: 2rem;
+    gap: 5rem;
+  }
+
+  button {
+    text-transform: none;
+
+    @media screen and (max-width: 768px) {
+      // margin-top: -5rem;
+    }
+  }
+
+  h1 {    
+    font: {
+      family: Cormorant, Lato, Arial, sans-serif;
+      weight: 300;
+      size: 62px;
+      line-height: 1.2;
+    };
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  h5 {
+    color: #c4c4c4;
+    margin-top: -12px;
+    font: {
+      family: Lato, Arial, sans-serif;
+      weight: 300;
+      size: 16px;
+      line-height: 19.2px;
+    };
+    text-align: left;
+    text-transform: uppercase;
+  }
+}
+
+.title {
+  @include flex(flex-start);
+  flex-direction: column;
+}
+
+.camisaria {
+  @include size(auto, 80%);
+}
+
+.lists {
+  @include flexspaced;
+  @include size(10rem, 100%);
+  margin: auto;
+  margin-left: 2rem;
+
+  @media screen and (max-width: 768px) {
+    @include flex(flex-start);
+    flex-direction: column;
+    text-align: left;
+    margin-top: 2.5rem;
+  }
+
+  li {
+    padding: 0.2rem;
+    text-align: left;
+    color: color.$cinza-2;
+
+    font: {
+      family: Cormorant, Lato, Arial, sans-serif;
+      size: 24px;
+      style: italic;
+      weight: 300;
+    }
+  }
+}
+

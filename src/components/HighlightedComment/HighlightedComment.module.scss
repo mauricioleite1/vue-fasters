@@ -1,0 +1,101 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/colors' as color;
+
+.container {
+  @include flex;
+  @include size(22.3rem);
+  background: color.$highlighted-comment-bg;
+  background-size: cover;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    @include flex;
+    @include size;
+    margin-top: 20px;
+    background: color.$azul-4;
+  }
+
+  .photo {
+    @include size(_, 217px);
+    transform: rotate(7.42deg);
+    border: 7px solid white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    position: relative;
+
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      top: 30px;
+      left: 40px;
+    }
+  }
+
+  .bgPhoto {
+    @include size(360px, _);
+    z-index: 0;
+    position: absolute;
+    right: 0;
+
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      top: 2px;
+    }
+  }
+
+  p {
+    @include size(auto, 65%);
+    font: {
+      family: Cormorant, Lato, Arial, serif;
+      size: 24px;
+      weight: 300;
+    }
+  }
+}
+
+.wrapper {
+  @include flex(center, flex-start);
+  @include size(auto, 74%);
+
+  @media screen and (max-width: 768px) {
+    @include size;
+  }
+}
+
+.text {
+  @include flex;
+  gap: 5rem;
+  flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    @include flex(center, center);
+    @include size;
+    background: color.$highlighted-comment-bg;
+    margin-top: 23rem;
+    padding-block: 3.5em;
+  }
+
+  h3 {
+    color: color.$azul-1;
+    font: {
+      family: Cormorant, Lato, Arial, sans-serif;
+      weight: 400;
+      size: 28px;
+      style: italic;
+    }
+  }
+
+  h4 {
+    color: color.$dourado;
+    font: {
+      family: Lato, Arial, sans-serif;
+      size: 20px;
+      weight: 300;
+    }
+  }
+
+  p {
+    font-family: Lato, Arial, sans-serif;
+    font-size: 24px;
+    color: color.$cinza-3;
+  }
+}

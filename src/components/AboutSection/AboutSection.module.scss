@@ -1,0 +1,115 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/colors' as color;
+
+.container {
+  @include flex;
+  @include size(34.2rem);
+  background: white;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    @include size;
+  }
+
+  img {
+    @include size(27.8rem, _);
+  }
+
+  button {
+    text-transform: none;
+  }
+}
+
+.wrapper {
+  @include flex(center, flex-start);
+  @include size(auto);
+  padding-top: 7rem;
+  padding-inline: 5.18rem;
+  gap: 7rem;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    @include size;
+  }
+
+  p {
+    color: #333;
+    font-size: 19px;
+    font-weight: 300;
+    text-align: left;
+    
+    &:nth-child(4) {
+      color: color.$azul-2;
+      font: {
+        family: Cormorant, Lato, Arial, serif;
+        size: 24px;
+        style: italic;
+        weight: 400;
+      }
+
+      @media screen and (max-width: 768px) {
+        @include flex(center, center);
+        @include size;
+        text-align: center;
+      }
+      
+      .signatureText {
+        font-family: Cormorant, Lato, Arial, serif;
+        font-style: normal;
+        position: absolute;
+        color: color.$cinza-3;
+        bottom: 4rem;
+        font-weight: 500;
+        font-size: 20px;
+        right: 0;
+
+        @media screen and (max-width: 768px) {
+          @include flex(center, center);
+          @include size;
+        }
+      }
+    }
+  }
+}
+
+.info {
+  @include flex(center, flex-start);
+  flex-flow: row wrap;
+  gap: 2.7rem;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    @include flex(center, center);
+    @include size;
+    margin-top: -7.5rem;
+  }
+
+  h1 {
+    @media screen and (max-width: 768px) {
+      @include flex(center, center);
+      @include size;
+      margin-top: -63rem;
+    }
+  }
+
+  hr {
+    @include transition(0.4s);
+    position: absolute;
+    left: 4rem;
+    top: 3.5rem;
+    width: 3.2rem;
+    opacity: 0.3;
+    border-color: color.$border-azul;
+
+    @media screen and (max-width: 768px) {
+      @include flex(center, center);
+      margin-top: -32.8rem;
+      margin-left: 4rem;
+    }
+  
+    &:hover {
+      left: -100px;
+      width: 25rem;
+    }
+  }
+}
