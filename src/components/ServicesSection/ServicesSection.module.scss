@@ -24,22 +24,46 @@
     background-image: url('@/assets/services-1.jpg');
     background-size: 112%;
     position: relative;
+    z-index: 1;
 
     &:hover {
       background-position: -6px -6px;
+      opacity: 0.4;
     }
+  }
+
+  .imgCamisariaBack {
+    @include size(30.5rem, 30.5rem);
+    @include transition(0.6s);
+    background: #001a24;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
   }
 
   .imgAlfaiataria {
     @include size(30.5rem, 30.5rem);
     @include transition(0.6s);
     background-image: url('@/assets/services-2.jpg');
-    background-size: cover;
-
+    background-size: 112%;
+    position: relative;
+    z-index: 1;
 
     &:hover {
       background-position: -6px -6px;
+      opacity: 0.4;
     }
+  }
+
+  .imgAlfaiatariaBack {
+    @include size(30.5rem, 30.5rem);
+    @include transition(0.6s);
+    background: #001a24;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
   }
 
   .imgBorder {
@@ -49,6 +73,7 @@
     border: 1px solid #1C86A4;
     position: absolute;
     pointer-events: none;
+    z-index: 2;
   }
 }
 

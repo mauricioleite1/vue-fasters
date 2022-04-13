@@ -5,6 +5,7 @@
       <div :class="[styles.image]">
         <div :class="[styles.imgBorder]" />
         <div :class="[styles.imgCamisaria]" />
+        <div :class="[styles.imgCamisariaBack]" />
       </div>
       <div :class="[styles.imageInfo]">
         <div id="camisaria" :class="[styles.camisaria]">
@@ -57,6 +58,7 @@
       <div :class="[styles.image]">
         <div :class="[styles.imgBorder]" />
         <div :class="[styles.imgAlfaiataria]" />
+        <div :class="[styles.imgAlfaiatariaBack]" />
         <!-- <img src="@/assets/services-2.jpg" alt="" /> -->
       </div>
     </div>
