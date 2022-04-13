@@ -1,0 +1,46 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/colors' as color;
+
+.container {
+  @include flex;
+  @include size(10rem);
+  background: white;
+  border-top: 2px solid color.$dourado;
+  position: relative;
+}
+
+.wrapper {
+  @include flexspaced;
+  @include size;
+}
+
+.leftContent {
+  @include flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+
+  h4 {
+    color: #BDBDBD;
+    font: {
+      family: Poppins, Lato, sans-serif;
+      size: 12px;
+      weight: 300;
+    }
+  }
+}
+
+.rightContent {
+  @include flex(flex-end);
+  @include size(8rem);
+  flex: 1;
+
+  h3 {
+    color: #4F4F4F;
+    font: {
+      family: Poppins, Lato, sans-serif;
+      size: 14px;
+      weight: 300;
+    }
+  }
+}

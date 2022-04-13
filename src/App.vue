@@ -9,7 +9,7 @@
   <testimonials-section></testimonials-section>
   <contact-section></contact-section>
   <whatsapp-icon></whatsapp-icon>
-  <the-hero></the-hero>
+  <the-footer></the-footer>
 </template>
 
 <script>
@@ -23,6 +23,7 @@ import ServicesSection from './components/ServicesSection/ServicesSection.vue';
 import TestimonialsSection from './components/TestimonialsSection/TestimonialsSection.vue';
 import WhatsappIcon from './components/WhatsappIcon/WhatsappIcon.vue';
 import ContactSection from './components/ContactSection/ContactSection.vue';
+import TheFooter from './components/TheFooter/TheFooter.vue';
 
 export default {
   name: 'App',
@@ -36,6 +37,7 @@ export default {
     ServicesSection,
     TestimonialsSection,
     ContactSection,
+    TheFooter,
     WhatsappIcon,
   },
 };
