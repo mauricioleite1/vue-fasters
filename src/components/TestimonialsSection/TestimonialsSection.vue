@@ -1,19 +1,22 @@
 <template>
   <div :class="[styles.container]">
-    <h1>Depoimentos</h1>
-    <hr>
+    <div :class="[styles.titulo]">
+      <h1>Depoimentos</h1>
+      <hr />
+    </div>
 
     <div :class="[styles.photo]" />
-      <p>
-        “Sou cliente do Renee há uns 12 anos.
-        Nosso primeiro contato foi por intermédio de<br>meu pai,
-        que já tem uma história de décadas com o querido Renee.<br>
-        O excelente atendimento antes e pós venda e a alta qualidade dos materiais
-        usados<br> colocam a Renee Trajar em um patamar acima dos demais do ramo.”
-      </p>
+    <p>
+      “Sou cliente do Renee há uns 12 anos. Nosso primeiro contato foi por intermédio de<br />meu
+      pai, que já tem uma história de décadas com o querido Renee.<br />
+      O excelente atendimento antes e pós venda e a alta qualidade dos materiais usados<br />
+      colocam a Renee Trajar em um patamar acima dos demais do ramo.”
+    </p>
 
-    <h3>Nome</h3>
-    <h4>Título da pessoa</h4>
+    <div :class="[styles.nome]">
+      <h3>William H. M. Garey</h3>
+      <h4>Advogado | Nelson Garey Avogados Associados</h4>
+    </div>
 
     <div>Seleção</div>
   </div>

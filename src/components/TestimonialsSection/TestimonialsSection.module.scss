@@ -45,12 +45,32 @@
       weight: 300;
     }
   }
+  
+  hr {
+    @include transition(0.4s);
+    border-color: color.$border-azul;
+    opacity: 0.8;
+    width: 3.2rem;
+  
+    &:hover {
+      left: -100px;
+      width: 25rem;
+    }
+  }
 }
 
+
+.titulo {
+  @include flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
 .photo {
   @include size(121px, 121px);
   border-radius: 50%;
   background: white;
+  background-image: url('@/assets/testimonials-photo-1.jpg');
+  background-size: cover;
   border: 2px solid color.$dourado;
 }
