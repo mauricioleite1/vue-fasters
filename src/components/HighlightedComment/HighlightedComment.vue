@@ -4,12 +4,16 @@
       <div :class="[styles.text]">
         <p>{{ text.highlight }}</p>
         <div>
-          <h3>Nelson Garey</h3>
-          <h4>Advogado | Nelson Garey Advogados Associados</h4>
+          <h3>{{ name }}</h3>
+          <h4>{{ title }}</h4>
         </div>
       </div>
-      <img :class="[styles.photo]" src="@/assets/highlighted-comment-1.png" alt="" />
-      <img :class="[styles.bgPhoto]" src="@/assets/highlighted-comment-2.jpg" alt="" />
+      <img :class="[styles.photo]" src="@/assets/highlighted-comment-1.png" alt="Nelson Garey" />
+      <img
+        :class="[styles.bgPhoto]"
+        src="@/assets/highlighted-comment-2.jpg"
+        alt="Nelson Garey in background"
+      />
     </div>
   </section>
 </template>
@@ -24,6 +28,8 @@ export default {
     return {
       styles,
       text,
+      name: 'Nelson Garey',
+      title: 'Advogado | Nelson Garey Advogados Associados',
     };
   },
 };
