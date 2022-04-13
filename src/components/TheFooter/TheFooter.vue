@@ -11,7 +11,7 @@
       </div>
     </div>
 
-    <button class="to-top-btn">
+    <button class="to-top-btn" @click="scrollToTop">
       <img src="@/assets/arrow-up.svg" alt="Back to Top" />
     </button>
   </footer>
@@ -22,6 +22,13 @@ import styles from './TheFooter.module.scss';
 
 export default {
   name: 'TheFooter',
-  data() { return { styles }; },
+  data() {
+    return { styles };
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
+  },
 };
 </script>

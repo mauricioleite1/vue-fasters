@@ -10,6 +10,7 @@
 }
 
 .wrapper {
+  @include flex;
   @include flexspaced;
   @include size;
 }

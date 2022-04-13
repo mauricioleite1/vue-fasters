@@ -9,6 +9,10 @@
   img {
     @include size(27.8rem, _);
   }
+
+  button {
+    text-transform: none;
+  }
 }
 
 .wrapper {
