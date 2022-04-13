@@ -3,12 +3,12 @@
     <div :class="[styles.wrapper]">
       <img src="@/assets/renee-photo.jpg" alt="Renee Trajar frontal photo" />
       <div :class="[styles.info]">
-        <h1>Renee Trajar<hr></h1>
+        <h1>{{ name }}<hr></h1>
         <p>{{ text.aboutFirstPart }}</p>
         <p>{{ text.aboutSecondPart }}</p>
         <p>
           {{ text.aboutCitation }}
-          <span :class="[styles.signatureText]">Renee Trajar</span>
+          <span :class="[styles.signatureText]">{{ name }}</span>
         </p>
         <button @click="handleClick">{{ callToActionButtonTitle }}</button>
       </div>
@@ -26,6 +26,7 @@ export default {
     return {
       styles,
       text,
+      name: 'Renee Trajar',
       callToActionButtonTitle: 'Agende uma visita!',
     };
   },
